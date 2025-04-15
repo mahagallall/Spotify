@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/spotify.png">
+    <title>Register</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-color: rgb(51, 48, 48);
+            font-family: Arial, sans-serif;
+        }
+    </style>
+</head>
+<body class="registeration_page">
+
+    <div class="register-form">
+        <form method="post" action="spotify.html">
+            <h1 style="text-align: center;">Register</h1><br><br>
+            
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" placeholder="Enter your username" required><br><br>
+            
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+            
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required><br><br>
+            
+            <label for="confirm-password">Confirm Password</label>
+            <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm your password" required><br><br>
+            
+            <input type="submit" value="Register"><br><br>
+            
+            <p style="text-align: center; font-size: 20px;">
+                Already have an account? <a class="login-link" href="login.html">Log In</a>
+            </p>
+        </form>
+    </div>
+
+</body>
+</html>

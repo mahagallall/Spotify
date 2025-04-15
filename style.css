@@ -1,0 +1,442 @@
+.welcome {
+    background: linear-gradient(270deg, #1DB954, #191414, #121212, #1DB954);
+    background-size: 800% 800%;
+    animation: gradientBackground 15s ease infinite;
+    font-family: Arial, sans-serif;
+}
+
+@keyframes gradientBackground {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+
+.login {
+    max-width: 400px;
+    margin: 10vh auto;
+    padding: 20px;
+    border-style: solid;
+    border-color: #b1d6a6;
+    border-radius: 8px;
+    background-color: rgba(0, 0, 0, 0.8); 
+    animation: fadeIn 1.5s ease;
+}
+
+
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(-20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+
+input[type=email], input[type=password] {
+    width: 60%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 2px solid #b1d6a6;
+    border-radius: 8px;
+    box-sizing: border-box;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+input[type=email]:focus, input[type=password]:focus {
+    background-color: rgb(182, 230, 173);
+    box-shadow: 0 0 8px rgba(29, 185, 84, 0.6);
+}
+
+input[type=email]:hover, input[type=password]:hover {
+    background-color: #333;
+    color: #fff;
+    box-shadow: 0 0 5px 2px rgba(255, 255, 255, 0.2);
+}
+
+
+input[type=submit] {
+    width: 30%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 0;
+    margin: 8px;
+    margin-left:120px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+
+input[type=submit]:hover {
+    background-color: #1DB954; 
+    color: white;
+    box-shadow: 0 0 10px 2px rgba(29, 185, 84, 0.5);
+}
+
+input[type=submit]:active {
+    transform: scale(0.95);
+    box-shadow: 0 0 5px 1px rgba(29, 185, 84, 0.5);
+}
+
+/* Register Link */
+.register {
+    text-decoration: none;
+    color: #1DB954;
+    transition: color 0.3s ease;
+}
+
+.register:hover {
+    color: #4CAF50;
+}
+
+
+h1 {
+    animation: fadeIn 1.5s ease; 
+}
+/*---------------------------------------------------*/
+
+.registeration_page{
+    background: linear-gradient(270deg, #1DB954, #191414, #121212, #1DB954);
+    background-size: 800% 800%;
+    animation: gradientBackground 15s ease infinite;
+    font-family: Arial, sans-serif;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+
+@keyframes gradientBackground {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+
+.register-form {
+    max-width: 400px;
+    width: 90%;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 2px solid #b1d6a6;
+    border-radius: 10px;
+    animation: fadeIn 1.5s ease;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(-20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+
+h1 {
+    text-align: center;
+    color: #1DB954;
+    margin-bottom: 20px;
+}
+
+
+input[type="text"], input[type="email"], input[type="password"] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 2px solid #b1d6a6;
+    border-radius: 8px;
+    background-color: #333;
+    color: #fff;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+}
+
+
+input[type="text"]:hover, input[type="email"]:hover, input[type="password"]:hover {
+    background-color: #555;
+    box-shadow: 0px 0px 8px rgba(255, 255, 255, 0.2);
+}
+
+input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus {
+    background-color: rgb(182, 230, 173);
+    color: #000;
+    box-shadow: 0px 0px 8px rgba(29, 185, 84, 0.6);
+}
+
+
+input[type="submit"] {
+    width: 30%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 10px;
+}
+
+input[type="submit"]:hover {
+    background-color: #1DB954;
+    box-shadow: 0px 0px 10px 2px rgba(29, 185, 84, 0.5);
+}
+
+input[type="submit"]:active {
+    transform: scale(0.95);
+}
+
+
+.login-link {
+    color: #1DB954;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.login-link:hover {
+    color: #4CAF50;
+}
+
+/*---------------------------------------------------*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    color: #ffffff;
+    background-color: #121212;
+    height: 100vh;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 240px 1fr;
+    grid-template-rows: 1fr auto;
+    height: 100vh;
+}
+
+
+.sidebar {
+    background-color: #000;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.sidebar h1 {
+    font-size: 1.8em;
+    color: #1db954;
+    margin-bottom: 1em;
+}
+
+.nav-links, .playlists ul {
+    list-style-type: none;
+}
+
+.nav-links li, .playlists ul li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+.nav-links li img, .playlists ul li img {
+    width: 20px;
+    height: 20px;
+    margin-right: 1em;
+}
+
+.nav-links li a, .playlists ul li a {
+    text-decoration: none;
+    color: #b3b3b3;
+}
+
+.nav-links li a:hover, .playlists ul li a:hover {
+    color: #ffffff;
+}
+
+.playlists h3 {
+    color: #b3b3b3;
+    margin-top: 2em;
+    margin-bottom: 0.5em;
+}
+
+
+.main {
+    background-color: #181818;
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+}
+
+.top-bar {
+    margin-bottom: 1em;
+}
+
+.top-bar input {
+    width: 100%;
+    padding: 0.5em;
+    background-color: #333;
+    border: none;
+    border-radius: 4px;
+    color: #ffffff;
+}
+
+.content h2 {
+    font-size: 1.5em;
+    margin-bottom: 1em;
+}
+
+.albums {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 1em;
+}
+
+.album-card {
+    background-color: #282828;
+    padding: 0.5em;
+    text-align: center;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.album-card:hover {
+    background-color: #3e3e3e;
+}
+
+.album-cover {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 0.5em;
+    transition: transform 0.3s;
+}
+
+.album-card:hover .album-cover {
+    transform: scale(1.05);
+}
+
+
+
+.footer {
+    position: fixed; /* Fix the footer to the bottom */
+    bottom: 0;
+    left: 240px; /* Align with the sidebar width */
+    width: calc(100% - 240px); /* Adjust to fit the remaining space */
+    background-color: #282828;
+    padding: 1em 2em;
+    border-top: 1px solid #333;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1;
+}
+
+.song-info {
+    display: flex;
+    align-items: center;
+}
+
+.song-cover {
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    border-radius: 4px;
+    margin-right: 1em;
+}
+
+
+.song-cover img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    border-radius: 4px;
+}
+
+
+.song-details p {
+    margin: 0;
+    color: #ffffff;
+}
+
+.song-details p:first-child {
+    font-weight: bold;
+    font-size: 1em;
+}
+
+.song-details p:last-child {
+    font-size: 0.9em;
+    color: #b3b3b3;
+}
+
+
+.controls {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.controls button {
+    background: none;
+    border: none;
+    color: #ffffff;
+    font-size: 1.5em;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.controls button:hover {
+    color: #1db954;
+}
+
+
+.volume {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+}
+
+.volume-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.volume input[type="range"] {
+    width: 100px;
+    background-color: #333;
+    border-radius: 5px;
+    height: 5px;
+    cursor: pointer;
+}
+
+.volume input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 10px;
+    height: 10px;
+    background-color: #1db954;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.artists {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 5em;
+    margin-bottom: 2em;
+    text-align: center;
+}
+
+.artist-cover {
+    border-radius: 50%;
+}
+
+.artist-card p, .album-card p {
+    font-size: 1em;
+    color: #ffffff;
+    margin-top: 0.5em;
+}
